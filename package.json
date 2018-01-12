@@ -1,0 +1,17 @@
+{
+  "name": "redux-learn",
+  "version": "1.0.0",
+  "description": "learn about build redux",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tanjiahui",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^22.0.6"
+  }
+}
