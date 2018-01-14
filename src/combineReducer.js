@@ -13,3 +13,4 @@ function combineReducer(reducers){
         return newState;
     }
 }
+module.exports = combineReducer;
