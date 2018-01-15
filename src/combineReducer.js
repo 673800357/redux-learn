@@ -4,7 +4,7 @@
  */
 function combineReducer(reducers){
     let reducerkey = Object.keys(reducers);
-    return function(prestate, action){
+    return function(prestate = {}, action){
         const newState = {}
         //这里的preState是当前整个的根state
         reducerkey.forEach((key) => {

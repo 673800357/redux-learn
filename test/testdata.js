@@ -3,7 +3,6 @@ function testReducer(state = {
 }, action) {
     switch (action.type) {
         case 'ADD':
-            // console.log('111')
             return Object.assign({}, {
                 sum: state.sum + 1
             });
@@ -15,6 +14,23 @@ function testReducer(state = {
             return state;
     }
 }
+
+function ggReducer(state = {
+    mul: 1
+}, action) {
+    switch (action.type) {
+        case 'MULTIPLY':
+            return Object.assign({}, {
+                mul: state.mul * 2
+            });
+        case 'DEVIDE':
+            return Object.assign({}, {
+                mul: state.mul / 2
+            });
+        default:
+            return state;
+    }
+}
 module.exports = {
-    testReducer
+    testReducer,ggReducer
 }
